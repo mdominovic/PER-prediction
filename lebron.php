@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -34,28 +39,47 @@
         </div>
     
     </header>
-    <form class="form">
-        <h2>Enter stats:</h2>
-        <p name="fg" type="FG:"><input name="fg" placeholder="" required></p>
-        <p name="fga" type="FGA:"><input name="fga" placeholder="" required></p>
-        <p name="ft" type="FT:"><input name="ft" placeholder="" required></p>
-        <p name="fta" type="FTA:"><input name="fta" placeholder="" required></p>
-        <p name="3p" type="3P:"><input name="3p" placeholder="" required></p>
-        <p name="ast" type="AST:"><input name="ast" placeholder="" required></p>
-        <p name="stl" type="STL:"><input name="stl" placeholder="" required></p>
-        <p name="blk" type="BLK:"><input name="blk" placeholder="" required></p>
-        <p name="orb" type="ORB:"><input name="orb" placeholder="" required></p>
-        <p name="drb" type="DRB:"><input name="drb" placeholder="" required></p>
-        <p name="tov" type="TOV:"><input name="tov" placeholder="" required></p>
-        
-        <button type="submit" name="submit" value="send">Submit</button>
-        
-        <div class="made">
-            <span>Made by:</span>
-            <span>Davor Buha, Mislav Dominović</span> 
-        </div>
-    </form>
-  
-  
+    
+    <p class="result">2015/2016 Stats</p>
+    
+    <table align="center">
+  <tr>
+    <th class="tbl">FG</th>
+    <th class="tbl">STL</th>
+    <th class="tbl">3P</th>
+    <th class="tbl">FT</th>
+    <th class="tbl">BLK</th>
+    <th class="tbl">ORB</th>
+    <th class="tbl">AST</th>
+    <th class="tbl">DRB</th>
+    <th class="tbl">PF</th>
+    <th class="tbl">FG MISS</th>
+    <th class="tbl">FT MISS</th>
+    <th class="tbl">TOV</th>
+  </tr>
+  <tr>
+    <td>737</td>
+    <td>104</td>
+    <td>87</td>
+    <td>359</td>
+    <td>49</td>
+    <td>111</td>
+    <td>514</td>
+    <td>454</td>
+    <td>143</td>
+    <td>679</td>
+    <td>132</td>
+    <td>249</td>
+  </tr>
+</table>
+    
+    
+    <p class="result">
+        2016/2017 Player Efficency Rating: 27.0
+    </p>
+    
 </body>
 </html>
+
+
+

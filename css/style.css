@@ -21,7 +21,7 @@ body{
 
 .form{
     width:340px;
-    height:780px;
+    height:830px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
@@ -59,11 +59,10 @@ input:focus{border-bottom:2px solid #78788c}
 p:before{
     content:attr(type);
     display:inline-block;
-    margin:10px 0;
     font-size:16px;
     color:#5a5a5a;
     width:20%;
-    padding-right: 20px;
+    padding-right: 5px;
     text-align:left;
     
 }
@@ -91,7 +90,7 @@ button{
     cursor:pointer;
     transition:all .3s;
 }
-
+none
 button:hover{background:#78788c;color:#fff}
 
 .made{
@@ -108,4 +107,56 @@ button:hover{background:#78788c;color:#fff}
     box-shadow:10px 10px 40px -14px #000;
 }
 
+.result{
+    padding: 10px;
+    color: white;
+    font-size: 45px;
+    background: transparent;
+}
+
+
 span{margin:0 5px 0 15px}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    position:relative;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tbl{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+th,td{
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+div.gallery {
+    margin-left: 200px;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
