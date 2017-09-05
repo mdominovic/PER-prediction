@@ -34,22 +34,35 @@
         </div>
     
     </header>
+    
+    
+    
     <div class="gallery">
-  <a href="lebron.php">
-    <img src="jamesle01.png" alt="lebron" width="300" height="200">
-  </a>
-  <div class="desc">2015/2016 season</div>
-</div>
+        <a href="lebron.php">
+        <img src="jamesle01.png" alt="lebron" width="300" height="200">
+        </a>
+        <div class="desc">LeBron James <br> 2015/2016 season</div>
+    </div>
+    
+    <div class="gallery">
+        <a href="melo.php">
+        <img src="anthoca01.png" alt="melo" width="300" height="200">
+        </a>
+        <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+    </div>
+    
+    
     <form class="form" method="post">
         <h2>Enter stats:</h2>
-        <p name="FG" type="FG:"><input name="FG" placeholder=""></p>
-        <p name="STL" type="STL:"><input name="STL" placeholder=""></p>
-        <p name="3P" type="3P:"><input name="3P" placeholder=""></p>
-        <p name="FT" type="FT:"><input name="FT" placeholder=""></p>
+        <p name="FG" type="FG:"><input name="FG" placeholder="" required></p>
+        <p name="FG" type="FG:"><input name="FG" placeholder="" required></p>
+        <p name="STL" type="STL:"><input name="STL" placeholder="" required></p>
+        <p name="3P" type="3P:"><input name="3P" placeholder="" required></p>
+        <p name="FT" type="FT:"><input name="FT" placeholder="" required></p>
         <p name="BLK" type="BLK:"><input name="BLK" placeholder=""></p>
-        <p name="ORB" type="ORB:"><input name="ORB" placeholder=""></p>
-        <p name="AST" type="AST:"><input name="AST" placeholder=""></p>
-        <p name="DRB" type="DRB:"><input name="DRB" placeholder=""></p>
+        <p name="ORB" type="ORB:"><input name="ORB" placeholder="" required></p>
+        <p name="AST" type="AST:"><input name="AST" placeholder="" required></p>
+        <p name="DRB" type="DRB:"><input name="DRB" placeholder="" required></p>
         <p name="PF" type="PF:"><input name="PF" placeholder=""></p>
         <p name="FT_MISS" type="FT MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
         <p name="FG_MISS" type="FG MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>

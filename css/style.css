@@ -13,7 +13,7 @@ body{
     height:130px;
     background:#e6e6e6;
     box-shadow:0 0 40px -10px #000;
-    margin-bottom: 100px;;
+    margin-bottom: 100px;
     padding:20px 30px;
     font-family:'Montserrat',sans-serif;
     position:relative;
@@ -21,7 +21,7 @@ body{
 
 .form{
     width:340px;
-    height:830px;
+    height:900px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
@@ -124,7 +124,6 @@ table {
     width: 70%;
     position:relative;
     padding: 5px;
-    border-radius: 10px;
 }
 
 .tbl{
@@ -133,17 +132,16 @@ table {
 }
 
 th,td{
-    padding: 5px;
     background: white;
-    border-radius: 10px;
+    margin: 5px;
     text-align: center;
 }
 
 
 div.gallery {
-    margin-left: 200px;
+    margin-left: 100px;
     float: left;
-    width: 180px;
+    width: 120px;
 }
 
 div.gallery:hover {
@@ -153,10 +151,17 @@ div.gallery:hover {
 div.gallery img {
     width: 100%;
     height: auto;
+    
+    
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
-    background-color: white;
+    background-color: #e6e6e6;
+    font-size: 10px;
+}
+
+.tablica{
+    border-radius: 10px;
 }

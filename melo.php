@@ -57,23 +57,23 @@ session_start();
     <th class="tbl">TOV</th>
   </tr>
   <tr>
-    <td>737</td>
-    <td>104</td>
-    <td>87</td>
-    <td>359</td>
-    <td>49</td>
-    <td>111</td>
-    <td>514</td>
-    <td>454</td>
-    <td>143</td>
-    <td>679</td>
-    <td>132</td>
-    <td>249</td>
+    <td>567</td>
+    <td>62</td>
+    <td>105</td>
+    <td>334</td>
+    <td>38</td>
+    <td>98</td>
+    <td>299</td>
+    <td>458</td>
+    <td>180</td>
+    <td>740</td>
+    <td>69</td>
+    <td>176</td>
   </tr>
 </table>
     
     <p class="result">
-        2016/2017 Player Efficency Rating: 27.0
+        2016/2017 Player Efficency Rating: 17.9
     </p>
     
 </body>
