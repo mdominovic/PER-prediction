@@ -39,12 +39,12 @@ session_start();
         </div>
     
     </header>
-        <img src="jamesle01.png" alt="lebron" width="100" height="auto" class="slika" align="middle">
-
+    
     <p class="ime">LeBron James</p>
     <p class="result">2015/2016 Stats</p>
     <table align="center">
   <tr>
+    <th class="tbl">Player name</th>
     <th class="tbl">FG</th>
     <th class="tbl">STL</th>
     <th class="tbl">3P</th>
@@ -57,21 +57,42 @@ session_start();
     <th class="tbl">FG MISS</th>
     <th class="tbl">FT MISS</th>
     <th class="tbl">TOV</th>
+    <th class="tbl">NEXT PER</th>
   </tr>
-  <tr>
-    <td>737</td>
-    <td>104</td>
-    <td>87</td>
-    <td>359</td>
-    <td>49</td>
-    <td>111</td>
-    <td>514</td>
-    <td>454</td>
-    <td>143</td>
-    <td>679</td>
-    <td>132</td>
-    <td>249</td>
-  </tr>
+        <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "perpredict";
+            
+            
+        
+            for($i=0; $i<5; $i++){
+            $z = "SELECT * FROM players WHERE ID = (SELECT MAX(ID) -".$i." FROM players)";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            
+            $res1 = mysqli_query($conn,$z);
+            while($row = mysqli_fetch_array($res1)){
+                echo "<tr>
+                <td>".$row['PlayerName']."</td>
+                <td>".$row['FG']."</td>
+                <td>".$row['STL']."</td>
+                <td>".$row['TP']."</td>
+                <td>".$row['FT']."</td>
+                <td>".$row['BLK']."</td>
+                <td>".$row['ORB']."</td>
+                <td>".$row['AST']."</td>
+                <td>".$row['DRB']."</td>
+                <td>".$row['PF']."</td>
+                <td>".$row['FG_MISS']."</td>
+                <td>".$row['FT_MISS']."</td>
+                <td>".$row['TOV']."</td>
+                <td>".$row['NEXTPER']."</td>
+                    </tr>";
+            }
+                
+          
+        }?>
 </table>
     
     <p class="result">

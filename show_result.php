@@ -40,6 +40,10 @@ session_start();
     
     </header>
     
+    <div class="ime">
+        <?php echo $_SESSION["Player_Name"]; ?>
+    </div>
+    
     <table align="center">
   <tr>
     <th class="tbl">FG</th>
@@ -75,10 +79,51 @@ session_start();
     <p class="result">
         Player Efficency Rating:
     <?php
+        $_SESSION['nextPER'] = round($_SESSION['nextPER'],2);
+        
     echo $_SESSION['nextPER'];
 
     ?>
     </p>
+    
+    
+    <?php 
+        
+     
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "perpredict";
+    $pn = $_SESSION['Player_Name'];
+    $fg = $_SESSION['fg'];
+    $tp = $_SESSION['tp'];
+    $stl = $_SESSION['stl'];
+    $ft = $_SESSION['ft'];
+    $blk = $_SESSION['blk'];
+    $orb = $_SESSION['orb'];
+    $ast = $_SESSION['ast'];
+    $drb = $_SESSION['drb'];
+    $pf = $_SESSION['pf'];
+    $fg_miss = $_SESSION['fg_miss'];
+    $ft_miss = $_SESSION['ft_miss'];
+    $tov = $_SESSION['tov'];
+    $nextper = $_SESSION['nextPER'];
+    
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        } 
+
+        $sql="INSERT INTO players (PlayerName, FG, TP, STL, FT, BLK, ORB, AST, DRB, PF, FG_MISS, FT_MISS, TOV, NEXTPER) VALUES ('$pn',$fg,$tp,$stl,$ft,$blk,$orb,$ast,$drb,$pf,$fg_miss,$ft_miss,$tov,$nextper)";
+
+        if ($conn->query($sql) === TRUE) {
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    $conn->close();
+    
+    ?>
     
 </body>
 </html>

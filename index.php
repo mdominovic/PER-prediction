@@ -32,49 +32,77 @@
         <div class="textHsmall">
             Depending on input, website predicts next year PER.
         </div>
+        <div class="textHminor">
+            Hover parameters for full name.
+        </div>
     
     </header>
-    
-    
-    
-    <div class="gallery">
-        <a href="lebron.php">
-        <img src="jamesle01.png" alt="lebron" width="300" height="200">
-        </a>
-        <div class="desc">LeBron James <br> 2015/2016 season</div>
-    </div>
-    
-    <div class="gallery">
-        <a href="melo.php">
-        <img src="anthoca01.png" alt="melo" width="300" height="200">
-        </a>
-        <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
-    </div>
-    
-    
-    <form class="form" method="post">
-        <h2>Enter stats:</h2>
-        <p name="FG" type="FG:"><input name="FG" placeholder="" required></p>
-        <p name="FG" type="FG:"><input name="FG" placeholder="" required></p>
-        <p name="STL" type="STL:"><input name="STL" placeholder="" required></p>
-        <p name="3P" type="3P:"><input name="3P" placeholder="" required></p>
-        <p name="FT" type="FT:"><input name="FT" placeholder="" required></p>
-        <p name="BLK" type="BLK:"><input name="BLK" placeholder=""></p>
-        <p name="ORB" type="ORB:"><input name="ORB" placeholder="" required></p>
-        <p name="AST" type="AST:"><input name="AST" placeholder="" required></p>
-        <p name="DRB" type="DRB:"><input name="DRB" placeholder="" required></p>
-        <p name="PF" type="PF:"><input name="PF" placeholder=""></p>
-        <p name="FT_MISS" type="FT MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
-        <p name="FG_MISS" type="FG MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
-        <p name="TOV" type="TOV:"><input name="TOV" placeholder=""></p>
-        
-        <button type="submit" name="submit" value="send">Submit</button>
-        
-        <div class="made">
-            <span>Made by:</span>
-            <span>Davor Buha, Mislav Dominović</span> 
+    <div class="row">
+        <div class="col-md-4">
+            <div class="gallery">
+                <a href="lebron.php">
+                <img src="jamesle01.png" alt="lebron" width="300" height="200">
+                </a>
+                <div class="desc">LeBron James <br> 2015/2016 season</div>
+            </div>
+
+            <div class="gallery">
+                <a href="melo.php">
+                <img src="anthoca01.png" alt="melo" width="300" height="200">
+                </a>
+                <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+            </div>
         </div>
-    </form>
+        <div class="col-md-8">
+        <form class="form" method="post">
+            <h2>Enter stats:</h2>
+            <p name="Player_Name" type="Player Name:"><input name="Player_Name" placeholder=""></p>
+            <p name="FG" type="FG:" title="Field Goals"><input name="FG" placeholder="" required></p>
+            <p name="FT" type="FT:" title="Free throws"><input name="FT" placeholder="" required></p>
+            <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" required></p>
+            <p name="3P" type="3P:" title="Three point shots"><input name="3P" placeholder="" required></p>
+            <p name="FT" type="FT:"><input name="FT" placeholder="" required></p>
+            <p name="BLK" type="BLK:"><input name="BLK" placeholder=""></p>
+            <p name="ORB" type="ORB:"><input name="ORB" placeholder="" required></p>
+            <p name="AST" type="AST:"><input name="AST" placeholder="" required></p>
+            <p name="DRB" type="DRB:"><input name="DRB" placeholder="" required></p>
+            <p name="PF" type="PF:"><input name="PF" placeholder=""></p>
+            <p name="FT_MISS" type="FT MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
+            <p name="FG_MISS" type="FG MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
+            <p name="TOV" type="TOV:"><input name="TOV" placeholder=""></p>
+
+            <button type="submit" name="submit" value="send">Submit</button>
+
+            <div class="made">
+                <span>Made by:</span>
+                <span>Davor Buha, Mislav Dominović</span> 
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="row col-md-4">
+        <div class="galleryDown">
+            <a href="lebron.php">
+            <img src="jamesle01.png" alt="lebron" width="300" height="200">
+            </a>
+            <div class="desc">LeBron James <br> 2015/2016 season</div>
+        </div>
+
+        <div class="galleryDown">
+            <a href="melo.php">
+            <img src="anthoca01.png" alt="melo" width="600" height="400">
+            </a>
+            <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+        </div>
+    </div>
+        
+    
+    
+    <div class="last5">
+        <a href="last5.php">Last 5 inputs</a>
+    </div>
+    
+        
 <?php
 
 
@@ -84,6 +112,7 @@ $properties;
 $values;
 if(isset($_POST["submit"]))
 {
+    $_SESSION['Player_Name'] = $_POST['Player_Name'];
     $fg = $_POST["FG"];
     $_SESSION["fg"] = $fg;
     $tp = $_POST["3P"];
@@ -111,14 +140,14 @@ if(isset($_POST["submit"]))
     $properties = $_POST;
     $properties = $_POST;
     unset($properties["submit"]);
-    $properties = array("Player Name" => "Daki") + $properties + array('nextPER' => 0);;
+    $properties = $properties + array('nextPER' => 0);;
     $values = array_values($properties);
     $properties = array_keys($properties);
 }
 if(isset($properties)){
     include_once("get_result.php");
 }
-
+    
 ?>
   
 </body>

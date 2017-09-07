@@ -21,7 +21,7 @@ body{
 
 .form{
     width:340px;
-    height:900px;
+    height:950px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
@@ -76,7 +76,7 @@ p:before{
 .textHsmall{
     text-align: center;
     font-size: 16px;
-    margin: 10px;
+    margin: 10px 5px 5px 5px;
 }
 
 button{
@@ -90,8 +90,10 @@ button{
     cursor:pointer;
     transition:all .3s;
 }
-none
+
 button:hover{background:#78788c;color:#fff}
+
+
 
 .made{
     content:'Hi';
@@ -144,6 +146,13 @@ div.gallery {
     width: 120px;
 }
 
+div.galleryDown{
+    margin-left: 100px;
+    margin-top: 250px;
+    float: left;
+    width: 120px;
+}
+
 div.gallery:hover {
     border: 1px solid #777;
 }
@@ -155,13 +164,75 @@ div.gallery img {
     
 }
 
+div.galleryDown img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+
 div.desc {
     padding: 15px;
     text-align: center;
     background-color: #e6e6e6;
     font-size: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .tablica{
     border-radius: 10px;
 }
+
+.ime{
+    font-size: 70px;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+.slika{
+    align-content: center;
+}
+
+.textHminor{
+    text-align: center;
+    font-size: 10px;
+}
+
+.last5{
+    float:right;
+    padding:8px 12px;
+    margin:20px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:#e6e6e6;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    height: 80px;
+    width: 280px;
+}
+
+.last5:hover{background:#78788c;color:#fff}
+
+div.last5 a{
+    color:#5a5a5a;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+
+button:hover{background:#78788c;color:#fff}
+
+div.last5 a:hover{color:#fff; text-decoration: none;}
