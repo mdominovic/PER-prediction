@@ -32,17 +32,17 @@ session_start();
 
     <header class="header"> 
         <div class="textHbig"> 
-            Player Efficiency Rating (PER) Prediction.
+            <a href="index.php">Player Efficiency Rating (PER) Prediction.</a>
         </div>
         <div class="textHsmall">
             Depending on input, website predicts next year PER.
         </div>
-    
+        
     </header>
-        <img src="jamesle01.png" alt="lebron" width="100" height="auto" class="slika" align="middle">
 
-    <p class="ime">LeBron James</p>
-    <p class="result">2015/2016 Stats</p>
+    <div class="ime">LeBron James</div>
+    <img class="imgbig" src="jamesle01.png" alt="lebron" align="middle">
+    <div class="result">2015/2016 season stats</div>
     <table align="center">
   <tr>
     <th class="tbl">FG</th>
@@ -74,9 +74,9 @@ session_start();
   </tr>
 </table>
     
-    <p class="result">
-        2016/2017 Player Efficency Rating: 27.0
-    </p>
+    <div class="result">
+        2016/2017 season Player Efficency Rating: 27.0
+    </div>
     
 </body>
 </html>

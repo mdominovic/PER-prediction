@@ -21,16 +21,45 @@ body{
 
 .form{
     width:340px;
-    height:950px;
+    height:900px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
     margin: 20px auto 200px auto;
+    margin-left: 250px;
     padding: 20px 30px;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
     font-family:'Montserrat',sans-serif;
     position:relative;
+}
+
+.last5{
+    float:right;
+    padding:8px 12px;
+    margin-top: 20px;
+    margin-right: 200px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:#e6e6e6;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    height: 80px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.last5:hover{background:#78788c;color:#fff}
+
+div.last5 a:hover{color:#fff; text-decoration: none;}
+
+div.textHbig a:hover{text-decoration: none;}
+
+div.last5 a{
+    color:#5a5a5a;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 h2{
@@ -93,8 +122,6 @@ button{
 
 button:hover{background:#78788c;color:#fff}
 
-
-
 .made{
     content:'Hi';
     position:absolute;
@@ -112,8 +139,9 @@ button:hover{background:#78788c;color:#fff}
 .result{
     padding: 10px;
     color: white;
-    font-size: 45px;
+    font-size: 35px;
     background: transparent;
+    text-align: center;
 }
 
 
@@ -140,18 +168,12 @@ th,td{
 }
 
 
-div.gallery {
-    margin-left: 100px;
+.gallery {
+    margin-left: 40px;
     float: left;
     width: 120px;
 }
 
-div.galleryDown{
-    margin-left: 100px;
-    margin-top: 250px;
-    float: left;
-    width: 120px;
-}
 
 div.gallery:hover {
     border: 1px solid #777;
@@ -164,12 +186,7 @@ div.gallery img {
     
 }
 
-div.galleryDown img {
-    width: 100%;
-    height: auto;
-    
-    
-}
+
 
 div.desc {
     padding: 15px;
@@ -190,7 +207,7 @@ div.desc {
     text-align: center;
 }
 
-.slika{
+.gallery{
     align-content: center;
 }
 
@@ -199,40 +216,17 @@ div.desc {
     font-size: 10px;
 }
 
-.last5{
-    float:right;
-    padding:8px 12px;
-    margin:20px;
-    font-family:'Montserrat',sans-serif;
-    border:2px solid #78788c;
-    background:#e6e6e6;
-    color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s;
-    height: 80px;
-    width: 280px;
+.haha1,.haha2{
+    margin-left:90px;
 }
 
-.last5:hover{background:#78788c;color:#fff}
-
-div.last5 a{
-    color:#5a5a5a;
-    font-size: 40px;
-    font-weight: 500;
+.haha2{
+    margin-top: 10px;
 }
 
-button{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    border:2px solid #78788c;
-    background:0;
-    color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s;
+.imgbig{
+    width: 150px;
+    height: auto;
+    margin-left: 770px;
+    background: #e6e6e6;
 }
-
-button:hover{background:#78788c;color:#fff}
-
-div.last5 a:hover{color:#fff; text-decoration: none;}

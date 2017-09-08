@@ -37,13 +37,15 @@ session_start();
         <div class="textHsmall">
             Depending on input, website predicts next year PER.
         </div>
+        
     
     </header>
-    
-    <div class="ime">Last 5 inputs in DB.</div>
+
+    <div class="ime">Jimmy Butler</div>
+    <img class="imgbig" src="butleji01.png" alt="lebron" align="middle">
+    <div class="result">2015/2016 season stats</div>
     <table align="center">
   <tr>
-    <th class="tbl">Player name</th>
     <th class="tbl">FG</th>
     <th class="tbl">STL</th>
     <th class="tbl">3P</th>
@@ -56,43 +58,26 @@ session_start();
     <th class="tbl">FG MISS</th>
     <th class="tbl">FT MISS</th>
     <th class="tbl">TOV</th>
-    <th class="tbl">NEXT PER</th>
   </tr>
-        <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "perpredict";
-            
-            
-        
-            for($i=0; $i<5; $i++){
-            $z = "SELECT * FROM players WHERE ID = (SELECT MAX(ID) -".$i." FROM players)";
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            
-            $res1 = mysqli_query($conn,$z);
-            while($row = mysqli_fetch_array($res1)){
-                echo "<tr>
-                <td>".$row['PlayerName']."</td>
-                <td>".$row['FG']."</td>
-                <td>".$row['STL']."</td>
-                <td>".$row['TP']."</td>
-                <td>".$row['FT']."</td>
-                <td>".$row['BLK']."</td>
-                <td>".$row['ORB']."</td>
-                <td>".$row['AST']."</td>
-                <td>".$row['DRB']."</td>
-                <td>".$row['PF']."</td>
-                <td>".$row['FG_MISS']."</td>
-                <td>".$row['FT_MISS']."</td>
-                <td>".$row['TOV']."</td>
-                <td>".$row['NEXTPER']."</td>
-                    </tr>";
-            }
-                
-          
-        }?>
+  <tr>
+    <td>470</td>
+    <td>110</td>
+    <td>64</td>
+    <td>395</td>
+    <td>43</td>
+    <td>79</td>
+    <td>321</td>
+    <td>279</td>
+    <td>124</td>
+    <td>565</td>
+    <td>80</td>
+    <td>132</td>
+  </tr>
 </table>
+    
+    <div class="result">
+        2016/2017 season Player Efficency Rating: 25.1
+    </div>
     
 </body>
 </html>

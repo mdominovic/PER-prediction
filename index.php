@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -27,7 +33,7 @@
 
     <header class="header"> 
         <div class="textHbig"> 
-            Player Efficiency Rating (PER) Prediction.
+            <a href="index.php">Player Efficiency Rating (PER) Prediction.</a>
         </div>
         <div class="textHsmall">
             Depending on input, website predicts next year PER.
@@ -37,76 +43,81 @@
         </div>
     
     </header>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="gallery">
-                <a href="lebron.php">
-                <img src="jamesle01.png" alt="lebron" width="300" height="200">
-                </a>
-                <div class="desc">LeBron James <br> 2015/2016 season</div>
+        <div class="modal-body row">
+            <div class="col-md-3">
+                <div class="row ">
+                    <div class="haha1">
+                        <div class="gallery">
+                            <a href="lebron.php">
+                            <img src="jamesle01.png" alt="lebron" width="100" height="50">
+                            </a>
+                            <div class="desc">LeBron James <br> 2015/2016 season</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a href="melo.php">
+                            <img src="anthoca01.png" alt="melo" width="100" height="50">
+                            </a>
+                            <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="haha2">
+                         <div class="gallery">
+                            <a href="steph.php">
+                                <img src="stephla01.png" alt="lebron" width="300" height="200">
+                            </a>
+                            <div class="desc">Lance Stephenson <br> 2015/2016 season</div>
+                        </div>
+
+                        <div class="gallery">
+                            <a href="butler.php">
+                                <img src="butleji01.png" alt="melo" width="300" height="200">
+                            </a>
+                            <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-md-9">
+            <div class="row">
+            <div class="last5">
+                    <a href="last5.php">Last 5 inputs</a>
+                </div>
+                <form class="form" method="post">
+                    <h2>Enter stats:</h2>
+                    <p name="Player_Name" type="Name:" title="Player Name"><input name="Player_Name" placeholder=""></p>
+                    <p name="FG" type="FG:" title="Field Goals"><input name="FG" placeholder="" required></p>
+                    <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" required></p>
+                    <p name="3P" type="3P:" title="3-point Field Goals"><input name="3P" placeholder="" required></p>
+                    <p name="FT" type="FT:" title="Free Throws"><input name="FT" placeholder="" required></p>
+                    <p name="BLK" type="BLK:" title="Blocks"><input name="BLK" placeholder=""></p>
+                    <p name="ORB" type="ORB:" title="Offensive Rebounds"><input name="ORB" placeholder="" required></p>
+                    <p name="AST" type="AST:" title="Assists"><input name="AST" placeholder="" required></p>
+                    <p name="DRB" type="DRB:" title="Defensive Rebounds"><input name="DRB" placeholder="" required></p>
+                    <p name="PF" type="PF:" title="Personal Fouls"><input name="PF" placeholder=""></p>
+                    <p name="FG_MISS" type="FG MISS:" class="ftfgmiss" title="Field Goals Missed"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
+                    <p name="FT_MISS" type="FT MISS:" class="ftfgmiss" title="Free Throws Missed"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
+                    <p name="TOV" type="TOV:" title="Turnovers"><input name="TOV" placeholder=""></p>
 
-            <div class="gallery">
-                <a href="melo.php">
-                <img src="anthoca01.png" alt="melo" width="300" height="200">
-                </a>
-                <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+                    <button type="submit" name="submit" value="send">Submit</button>
+
+                    <div class="made">
+                        <span>Made by:</span>
+                        <span>Davor Buha, Mislav Dominović</span> 
+                    </div>
+
+                </form>
+                
             </div>
-        </div>
-        <div class="col-md-8">
-        <form class="form" method="post">
-            <h2>Enter stats:</h2>
-            <p name="Player_Name" type="Player Name:"><input name="Player_Name" placeholder=""></p>
-            <p name="FG" type="FG:" title="Field Goals"><input name="FG" placeholder="" required></p>
-            <p name="FT" type="FT:" title="Free throws"><input name="FT" placeholder="" required></p>
-            <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" required></p>
-            <p name="3P" type="3P:" title="Three point shots"><input name="3P" placeholder="" required></p>
-            <p name="FT" type="FT:"><input name="FT" placeholder="" required></p>
-            <p name="BLK" type="BLK:"><input name="BLK" placeholder=""></p>
-            <p name="ORB" type="ORB:"><input name="ORB" placeholder="" required></p>
-            <p name="AST" type="AST:"><input name="AST" placeholder="" required></p>
-            <p name="DRB" type="DRB:"><input name="DRB" placeholder="" required></p>
-            <p name="PF" type="PF:"><input name="PF" placeholder=""></p>
-            <p name="FT_MISS" type="FT MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
-            <p name="FG_MISS" type="FG MISS:" class="ftfgmiss"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
-            <p name="TOV" type="TOV:"><input name="TOV" placeholder=""></p>
-
-            <button type="submit" name="submit" value="send">Submit</button>
-
-            <div class="made">
-                <span>Made by:</span>
-                <span>Davor Buha, Mislav Dominović</span> 
-            </div>
-        </form>
-        </div>
-    </div>
-    <div class="row col-md-4">
-        <div class="galleryDown">
-            <a href="lebron.php">
-            <img src="jamesle01.png" alt="lebron" width="300" height="200">
-            </a>
-            <div class="desc">LeBron James <br> 2015/2016 season</div>
-        </div>
-
-        <div class="galleryDown">
-            <a href="melo.php">
-            <img src="anthoca01.png" alt="melo" width="600" height="400">
-            </a>
-            <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
         </div>
     </div>
         
-    
-    
-    <div class="last5">
-        <a href="last5.php">Last 5 inputs</a>
-    </div>
     
         
 <?php
 
-
-session_start();
 session_unset();
 $properties;
 $values;

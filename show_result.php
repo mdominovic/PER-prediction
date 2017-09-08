@@ -32,7 +32,7 @@ session_start();
 
     <header class="header"> 
         <div class="textHbig"> 
-            Player Efficiency Rating (PER) Prediction.
+            <a href="index.php">Player Efficiency Rating (PER) Prediction.</a>
         </div>
         <div class="textHsmall">
             Depending on input, website predicts next year PER.
