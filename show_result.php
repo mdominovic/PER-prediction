@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 
 ?>
@@ -76,7 +77,7 @@ session_start();
 </table>
     
     
-    <p class="result">
+    <div class="result">
         Player Efficency Rating:
     <?php
         $_SESSION['nextPER'] = round($_SESSION['nextPER'],2);
@@ -84,7 +85,7 @@ session_start();
     echo $_SESSION['nextPER'];
 
     ?>
-    </p>
+    </div>
     
     
     <?php 

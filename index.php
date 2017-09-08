@@ -1,9 +1,9 @@
 <?php
+ob_start();
 session_start();
-
+session_unset();
 
 ?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -44,7 +44,7 @@ session_start();
     
     </header>
         <div class="modal-body row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="row ">
                     <div class="haha1">
                         <div class="gallery">
@@ -80,7 +80,7 @@ session_start();
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
             <div class="row">
             <div class="last5">
                     <a href="last5.php">Last 5 inputs</a>
@@ -113,12 +113,8 @@ session_start();
             </div>
         </div>
     </div>
-        
-    
-        
 <?php
 
-session_unset();
 $properties;
 $values;
 if(isset($_POST["submit"]))
@@ -158,8 +154,7 @@ if(isset($_POST["submit"]))
 if(isset($properties)){
     include_once("get_result.php");
 }
-    
-?>
   
+?>
 </body>
 </html>
