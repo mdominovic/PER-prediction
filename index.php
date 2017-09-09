@@ -75,7 +75,7 @@ session_unset();
                             <a href="butler.php">
                                 <img src="butleji01.png" alt="melo" width="300" height="200">
                             </a>
-                            <div class="desc">Carmelo Anthony <br> 2015/2016 season</div>
+                            <div class="desc">Jimmy Butler <br> 2015/2016 season</div>
                         </div>
                     </div>
                 </div>
@@ -89,13 +89,13 @@ session_unset();
                     <h2>Enter stats:</h2>
                     <p name="Player_Name" type="Name:" title="Player Name"><input name="Player_Name" placeholder=""></p>
                     <p name="FG" type="FG:" title="Field Goals"><input name="FG" placeholder="" required></p>
-                    <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" required></p>
-                    <p name="3P" type="3P:" title="3-point Field Goals"><input name="3P" placeholder="" required></p>
-                    <p name="FT" type="FT:" title="Free Throws"><input name="FT" placeholder="" required></p>
+                    <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" ></p>
+                    <p name="3P" type="3P:" title="3-point Field Goals"><input name="3P" placeholder="" ></p>
+                    <p name="FT" type="FT:" title="Free Throws"><input name="FT" placeholder="" ></p>
                     <p name="BLK" type="BLK:" title="Blocks"><input name="BLK" placeholder=""></p>
-                    <p name="ORB" type="ORB:" title="Offensive Rebounds"><input name="ORB" placeholder="" required></p>
-                    <p name="AST" type="AST:" title="Assists"><input name="AST" placeholder="" required></p>
-                    <p name="DRB" type="DRB:" title="Defensive Rebounds"><input name="DRB" placeholder="" required></p>
+                    <p name="ORB" type="ORB:" title="Offensive Rebounds"><input name="ORB" placeholder="" ></p>
+                    <p name="AST" type="AST:" title="Assists"><input name="AST" placeholder=""></p>
+                    <p name="DRB" type="DRB:" title="Defensive Rebounds"><input name="DRB" placeholder=""></p>
                     <p name="PF" type="PF:" title="Personal Fouls"><input name="PF" placeholder=""></p>
                     <p name="FG_MISS" type="FG MISS:" class="ftfgmiss" title="Field Goals Missed"><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
                     <p name="FT_MISS" type="FT MISS:" class="ftfgmiss" title="Free Throws Missed"><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
