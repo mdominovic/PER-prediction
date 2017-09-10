@@ -56,7 +56,7 @@ session_start();
     <th class="tbl">FG MISS</th>
     <th class="tbl">FT MISS</th>
     <th class="tbl">TOV</th>
-    <th class="tbl">NEXT PER</th>
+    <th class="tble">NEXT PER</th>
   </tr>
         <?php
             $servername = "localhost";
@@ -86,7 +86,7 @@ session_start();
                 <td>".$row['FG_MISS']."</td>
                 <td>".$row['FT_MISS']."</td>
                 <td>".$row['TOV']."</td>
-                <td>".$row['NEXTPER']."</td>
+                <td class='tblf'>".$row['NEXTPER']."</td>
                     </tr>";
             }
                 

@@ -161,12 +161,21 @@ table {
     margin-bottom: 5px;
 }
 
+.tble{
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #e64b4b;
+}
+
+.tblf{background-color: #ff6b6b}
+
 th,td{
-    background: white;
+    background: #e6e6e6;
     margin: 5px;
     text-align: center;
 }
 
+th{background: white;}
 
 .gallery {
     margin-left: 40px;
