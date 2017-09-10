@@ -45,7 +45,7 @@ session_start();
         <?php echo $_SESSION["Player_Name"]; ?>
     </div>
     
-    <table align="center">
+    <table class="table table-bordered" style="width:70%;" align="center">
   <tr>
     <th class="tbl">FG</th>
     <th class="tbl">STL</th>

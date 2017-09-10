@@ -24,6 +24,7 @@ session_start();
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
   
 </head>
 
@@ -43,7 +44,7 @@ session_start();
     <div class="ime">LeBron James</div>
     <img class="imgbig" src="jamesle01.png" alt="lebron" align="middle">
     <div class="result">2015/2016 season stats</div>
-    <table align="center">
+    <table class="table table-bordered" align="center" style="width:70%;">
   <tr>
     <th class="tbl">FG</th>
     <th class="tbl">STL</th>

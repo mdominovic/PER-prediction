@@ -44,7 +44,7 @@ session_start();
     <div class="ime">Jimmy Butler</div>
     <img class="imgbig" src="butleji01.png" alt="lebron" align="middle">
     <div class="result">2015/2016 season stats</div>
-    <table align="center">
+    <table class="table table-bordered" style="width:70%;" align="center">
   <tr>
     <th class="tbl">FG</th>
     <th class="tbl">STL</th>

@@ -41,7 +41,7 @@ session_start();
     </header>
     
     <div class="ime">Last 5 inputs in DB.</div>
-    <table align="center">
+    <table class="table table-bordered" style="width:70%;" align="center">
   <tr>
     <th class="tbl">Player name</th>
     <th class="tbl">FG</th>
