@@ -89,16 +89,16 @@ session_unset();
                     <h2>Enter stats:</h2>
                     <p name="Player_Name" type="Name:" title="Player Name"><input name="Player_Name" placeholder=""></p>
                     <p name="FG" type="FG:" title="Field Goals"><input name="FG" placeholder="" required></p>
-                    <p name="STL" type="STL:" title="Steals" required><input name="STL" placeholder="" ></p>
-                    <p name="3P" type="3P:" title="3-point Field Goals" required><input name="3P" placeholder="" ></p>
-                    <p name="FT" type="FT:" title="Free Throws" required><input name="FT" placeholder="" ></p>
-                    <p name="BLK" type="BLK:" title="Blocks" required><input name="BLK" placeholder=""></p>
-                    <p name="ORB" type="ORB:" title="Offensive Rebounds" required><input name="ORB" placeholder="" ></p>
-                    <p name="AST" type="AST:" title="Assists" required><input name="AST" placeholder=""></p>
+                    <p name="STL" type="STL:" title="Steals"><input name="STL" placeholder="" required></p>
+                    <p name="3P" type="3P:" title="3-point Field Goals"><input name="3P" placeholder="" required></p>
+                    <p name="FT" type="FT:" title="Free Throws"><input name="FT" placeholder="" required></p>
+                    <p name="BLK" type="BLK:" title="Blocks"><input name="BLK" placeholder="" required></p>
+                    <p name="ORB" type="ORB:" title="Offensive Rebounds"><input name="ORB" placeholder="" required></p>
+                    <p name="AST" type="AST:" title="Assists"><input name="AST" placeholder="" required></p>
                     <p name="DRB" type="DRB:" title="Defensive Rebounds"><input name="DRB" placeholder=""></p>
                     <p name="PF" type="PF:" title="Personal Fouls"><input name="PF" placeholder=""></p>
-                    <p name="FG_MISS" type="FG MISS:" class="ftfgmiss" title="Field Goals Missed" required><input class="inputftfgmiss" name="FG_MISS" placeholder=""></p>
-                    <p name="FT_MISS" type="FT MISS:" class="ftfgmiss" title="Free Throws Missed" required><input class="inputftfgmiss" name="FT_MISS" placeholder=""></p>
+                    <p name="FG_MISS" type="FG MISS:" class="ftfgmiss" title="Field Goals Missed"><input class="inputftfgmiss" name="FG_MISS" placeholder="" required></p>
+                    <p name="FT_MISS" type="FT MISS:" class="ftfgmiss" title="Free Throws Missed"><input class="inputftfgmiss" name="FT_MISS" placeholder="" required></p>
                     <p name="TOV" type="TOV:" title="Turnovers"><input name="TOV" placeholder="" required></p>
 
                     <button type="submit" name="submit" value="send">Submit</button>
