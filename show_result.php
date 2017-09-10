@@ -91,8 +91,8 @@ session_start();
     <?php 
         
      
-    $servername = "localhost";
-    $username = "root";
+    $servername = "127.0.0.1:52356";
+    $username = "azure@localhost";
     $password = "";
     $dbname = "perpredict";
     $pn = $_SESSION['Player_Name'];
